@@ -1,0 +1,735 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="18.3" version="18.3" Modules="architect" RootPath="." Language="en" Id="{AA515C66-45C8-48C1-AB9C-1DC92C44EE2D}">
+  <COMPONENT cid="caphyon.advinst.msicomp.ProjectOptionsComponent">
+    <ROW Name="RepackFile" Value="C:\Users\WDAGUtilityAccount\Downloads\AutoHotkey-Files\AutoHotkey\AutoHotkey.rpk"/>
+    <ROW Name="RepackScanProfile" Value="Default"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="AI_CURRENT_YEAR" Value="2021" ValueLocId="-"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="This installer database contains the logic and data required to install [|ProductName]." ValueLocId="*"/>
+    <ROW Property="Manufacturer" Value="Your Company"/>
+    <ROW Property="ProductCode" Value="1033:{12D7E33D-D611-4DEC-9E29-54230C53543C} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="AutoHotkey"/>
+    <ROW Property="ProductVersion" Value="1.1.33.9" Type="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{FB9D772E-79BE-42E8-8DAF-06776E5FA23D}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1"/>
+    <ROW Directory="Compiler_Dir" Directory_Parent="APPDIR" DefaultDir="Compiler"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="ShellNew_Dir" Directory_Parent="WindowsFolder" DefaultDir="ShellNew"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="WindowsFolder" Directory_Parent="TARGETDIR" DefaultDir="WINDOW~1|WindowsFolder" IsPseudoRoot="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{81BDD73E-95BA-44D7-91D2-E57534099A49}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="Ahk2Exe.exe" ComponentId="{0D1E3A84-BEE1-46D9-A1B6-5447469AE67B}" Directory_="Compiler_Dir" Attributes="0" KeyPath="Ahk2Exe.exe"/>
+    <ROW Component="AutoHotkey.chm" ComponentId="{6DED51E4-569B-40F6-B35D-E9FD09080730}" Directory_="APPDIR" Attributes="0" KeyPath="AutoHotkey.chm" Type="1"/>
+    <ROW Component="AutoHotkey.exe" ComponentId="{6B5CD10C-BCA0-4492-BB1F-614FD6BF7379}" Directory_="APPDIR" Attributes="256" KeyPath="AutoHotkey.exe"/>
+    <ROW Component="AutoHotkeyA32.exe" ComponentId="{476DC003-E29A-41C4-8B71-80B866D5A688}" Directory_="APPDIR" Attributes="0" KeyPath="AutoHotkeyA32.exe"/>
+    <ROW Component="AutoHotkeyU32.exe" ComponentId="{1E97ED9E-AA33-47B2-8661-288EEB904597}" Directory_="APPDIR" Attributes="0" KeyPath="AutoHotkeyU32.exe"/>
+    <ROW Component="AutoHotkeyU64.exe" ComponentId="{65D5B18A-3FCA-4FD2-AB43-D63B7C42C6D4}" Directory_="APPDIR" Attributes="256" KeyPath="AutoHotkeyU64.exe"/>
+    <ROW Component="Data" ComponentId="{9647751F-B4D8-4FFC-8CA1-145034DEBD54}" Directory_="APPDIR" Attributes="260" KeyPath="Data"/>
+    <ROW Component="GlobalAssocChangedCounter" ComponentId="{ACAB1376-2DC0-4FDA-B226-0759913458F3}" Directory_="APPDIR" Attributes="4" KeyPath="GlobalAssocChangedCounter"/>
+    <ROW Component="InstallDir" ComponentId="{D2137621-5BDA-4A0C-B171-55CBD662180C}" Directory_="APPDIR" Attributes="260" KeyPath="InstallDir"/>
+    <ROW Component="InstalledWin32AppsRevision" ComponentId="{0C8EF409-88C3-485C-B613-1FF420EF37B8}" Directory_="APPDIR" Attributes="260" KeyPath="InstalledWin32AppsRevision"/>
+    <ROW Component="Installer.ahk" ComponentId="{F1A8224A-1D9D-4A6A-A5C8-6E6423870125}" Directory_="APPDIR" Attributes="0" KeyPath="Installer.ahk" Type="0"/>
+    <ROW Component="Microsoft.PowerShellCmdletDefinitionXML.1" ComponentId="{D6C840C0-413A-465F-ADE3-DC8A3DE64A9A}" Directory_="APPDIR" Attributes="260" KeyPath="Microsoft.PowerShellCmdletDefinitio"/>
+    <ROW Component="Microsoft.PowerShellSessionConfiguration.1" ComponentId="{56DC0562-69EF-4DCB-BBDD-B6DF6293483F}" Directory_="APPDIR" Attributes="260" KeyPath="Microsoft.PowerShellSessionConfigur"/>
+    <ROW Component="Microsoft.PowerShellXMLData.1" ComponentId="{08F18CB7-0FC1-42E7-ACFA-CCE84A850644}" Directory_="APPDIR" Attributes="260" KeyPath="Microsoft.PowerShellXMLData.1"/>
+    <ROW Component="SHCmdFile" ComponentId="{E6DDFEA0-8185-4882-A937-5D4D691AFE80}" Directory_="APPDIR" Attributes="260" KeyPath="SHCmdFile"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{7DB0F195-0590-4A30-AD9A-C8C14806C2F5}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="SearchFolder" ComponentId="{0F7A1B1E-5859-4E17-BA80-90AAF228447A}" Directory_="APPDIR" Attributes="260" KeyPath="SearchFolder"/>
+    <ROW Component="StartMenuFolder" ComponentId="{36D3B51A-E4C3-403A-BE79-F230485869AD}" Directory_="APPDIR" Attributes="260" KeyPath="StartMenuFolder"/>
+    <ROW Component="Template.ahk" ComponentId="{05B6F7B8-90E8-4719-A89E-564861AD4194}" Directory_="ShellNew_Dir" Attributes="0" KeyPath="Template.ahk" Type="0"/>
+    <ROW Component="Unicode64bit.bin" ComponentId="{1BF7277B-2102-4E63-9C96-F5D29603B596}" Directory_="Compiler_Dir" Attributes="256" KeyPath="Unicode64bit.bin" Type="0"/>
+    <ROW Component="Version" ComponentId="{45C8C046-41CB-48C3-9D3D-E181E7A054B0}" Directory_="APPDIR" Attributes="260" KeyPath="Version"/>
+    <ROW Component="WMP11.AssocFile.AIFF" ComponentId="{791B3613-EDDA-4B5A-A3B2-BC0594C0AE00}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.AIFF"/>
+    <ROW Component="WMP11.AssocFile.AIFF_1" ComponentId="{C59BFB7B-815C-4462-9720-12F09521D8FF}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.AIFF_1"/>
+    <ROW Component="WMP11.AssocFile.AIFF_2" ComponentId="{A15199B8-D312-4E04-B505-AD944D0E482E}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.AIFF_2"/>
+    <ROW Component="WMP11.AssocFile.ASF" ComponentId="{ACE87A08-6E34-4F95-992B-F89110C52236}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.ASF"/>
+    <ROW Component="WMP11.AssocFile.ASX" ComponentId="{8067BD36-E195-4EF3-B059-36C980409BC6}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.ASX"/>
+    <ROW Component="WMP11.AssocFile.ASX_1" ComponentId="{56EA8597-599B-4C6E-8011-0CBB8A1D70CD}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.ASX_1"/>
+    <ROW Component="WMP11.AssocFile.AU" ComponentId="{F6C3D0CC-5191-4214-8C22-52CC2CF5BD2B}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.AU"/>
+    <ROW Component="WMP11.AssocFile.AU_1" ComponentId="{9D727B82-9640-42C0-A3DE-48885E01681A}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.AU_1"/>
+    <ROW Component="WMP11.AssocFile.MIDI" ComponentId="{EE405B4C-AED0-4DDA-81BE-4EC092FE907E}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.MIDI"/>
+    <ROW Component="WMP11.AssocFile.MIDI_1" ComponentId="{D25C8C4C-26A6-4B57-BE20-7E35A756F308}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.MIDI_1"/>
+    <ROW Component="WMP11.AssocFile.MIDI_2" ComponentId="{394C8E82-55E5-4803-B039-956F0D74B1E5}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.MIDI_2"/>
+    <ROW Component="WMP11.AssocFile.MK3D" ComponentId="{861BC530-0CAA-46CE-A58D-ED6BC7BBACF5}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.MK3D"/>
+    <ROW Component="WMP11.AssocFile.MPEG" ComponentId="{03C7C09B-3268-4070-AA8E-4FA0A315835B}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.MPEG"/>
+    <ROW Component="WMP11.AssocFile.MPEG_1" ComponentId="{A7CBE535-99B4-4745-80C4-5F58807AB47D}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.MPEG_1"/>
+    <ROW Component="WMP11.AssocFile.MPEG_2" ComponentId="{C0AD9E83-2C02-4516-84A2-669BA7F2C67C}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.MPEG_2"/>
+    <ROW Component="WMP11.AssocFile.WAX" ComponentId="{87654339-1C7A-416B-B1E1-312991D02DE7}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.WAX"/>
+    <ROW Component="WMP11.AssocFile.WVX" ComponentId="{A72D22BA-5B3A-414E-96EE-0306BD370BBB}" Directory_="APPDIR" Attributes="260" KeyPath="WMP11.AssocFile.WVX"/>
+    <ROW Component="WindowSpy.ahk" ComponentId="{E3A3A837-FB6C-4266-A8D8-66972137C0D1}" Directory_="APPDIR" Attributes="0" KeyPath="WindowSpy.ahk"/>
+    <ROW Component="_" ComponentId="{E03025BE-F908-4FBA-B1A8-925F35E91B7E}" Directory_="APPDIR" Attributes="260" KeyPath="_"/>
+    <ROW Component="__1" ComponentId="{AEF82735-B285-4AEF-9910-5A28E86A037A}" Directory_="APPDIR" Attributes="260" KeyPath="__1"/>
+    <ROW Component="__10" ComponentId="{FF6DE8FF-DDE8-40A1-91DD-05F88BE69AFD}" Directory_="APPDIR" Attributes="260" KeyPath="__10"/>
+    <ROW Component="__11" ComponentId="{DBF0C478-4E49-4F0A-91EF-A72760D0216F}" Directory_="APPDIR" Attributes="260" KeyPath="__11"/>
+    <ROW Component="__12" ComponentId="{17B0678D-AB04-4FE7-ACE6-6C5EB3D86D20}" Directory_="APPDIR" Attributes="260" KeyPath="__12"/>
+    <ROW Component="__13" ComponentId="{E2F9B5A5-C9B6-4F1A-836F-D38816763649}" Directory_="APPDIR" Attributes="260" KeyPath="__13"/>
+    <ROW Component="__14" ComponentId="{04830564-3D5B-4804-8FB2-CD78DA032F63}" Directory_="APPDIR" Attributes="260" KeyPath="__14"/>
+    <ROW Component="__15" ComponentId="{749FBECA-19A7-4DEE-BFF7-4B557525794F}" Directory_="APPDIR" Attributes="260" KeyPath="__15"/>
+    <ROW Component="__16" ComponentId="{0556DCC6-A072-478A-9769-69101AC2E030}" Directory_="APPDIR" Attributes="260" KeyPath="__16"/>
+    <ROW Component="__17" ComponentId="{3AB7ECCF-E722-420E-834E-757DB1C13674}" Directory_="APPDIR" Attributes="260" KeyPath="__17"/>
+    <ROW Component="__18" ComponentId="{26495579-612B-4F54-80F6-1A656C407DB2}" Directory_="APPDIR" Attributes="260" KeyPath="__18"/>
+    <ROW Component="__19" ComponentId="{70B1DE89-0F68-4B82-9A6C-5DB865423CA0}" Directory_="APPDIR" Attributes="260" KeyPath="__19"/>
+    <ROW Component="__2" ComponentId="{4652230D-3D0C-4D54-8857-0D89F5E4DDBC}" Directory_="APPDIR" Attributes="260" KeyPath="__2"/>
+    <ROW Component="__20" ComponentId="{AD4B2326-EC2D-4F59-A014-30FC117913A3}" Directory_="APPDIR" Attributes="260" KeyPath="__20"/>
+    <ROW Component="__21" ComponentId="{A1E0E352-93C0-4E27-BEE6-B340E5550534}" Directory_="APPDIR" Attributes="260" KeyPath="__21"/>
+    <ROW Component="__22" ComponentId="{2B8B1E1D-C283-4721-AF18-1EB5A5050A50}" Directory_="APPDIR" Attributes="260" KeyPath="__22"/>
+    <ROW Component="__23" ComponentId="{79FCC042-BF5B-4498-84AE-E49785B139CE}" Directory_="APPDIR" Attributes="260" KeyPath="__23"/>
+    <ROW Component="__24" ComponentId="{699704BF-0A37-4C56-8BA8-8445A4A1D968}" Directory_="APPDIR" Attributes="260" KeyPath="__24"/>
+    <ROW Component="__25" ComponentId="{46C1FF1F-D135-4468-9CE9-A5C3B6B588DD}" Directory_="APPDIR" Attributes="260" KeyPath="__25"/>
+    <ROW Component="__26" ComponentId="{83AB04C7-2B8A-4042-9126-653C09D9B2D2}" Directory_="APPDIR" Attributes="260" KeyPath="__26"/>
+    <ROW Component="__27" ComponentId="{E7412849-C6F0-4291-8501-8F066DBBB769}" Directory_="APPDIR" Attributes="260" KeyPath="__27"/>
+    <ROW Component="__28" ComponentId="{4A3195DE-DCE9-43B5-928E-27DBB6906400}" Directory_="APPDIR" Attributes="260" KeyPath="__28"/>
+    <ROW Component="__3" ComponentId="{9459819E-DB4A-4B34-AA3B-E08D47F8B663}" Directory_="APPDIR" Attributes="260" KeyPath="__3"/>
+    <ROW Component="__30" ComponentId="{D944C7DD-6804-4EA8-86BC-AB64F357B325}" Directory_="APPDIR" Attributes="260" KeyPath="__30"/>
+    <ROW Component="__31" ComponentId="{541C9D2B-1F40-4EAA-91B5-A4AB002F4E61}" Directory_="APPDIR" Attributes="260" KeyPath="__31"/>
+    <ROW Component="__32" ComponentId="{14AC7AB5-392B-455D-BBD6-82C9E0A8E511}" Directory_="APPDIR" Attributes="260" KeyPath="__32"/>
+    <ROW Component="__33" ComponentId="{B4073062-D7B7-4267-8093-C161C9F85FD9}" Directory_="APPDIR" Attributes="260" KeyPath="__33"/>
+    <ROW Component="__34" ComponentId="{FA3248A2-8384-45CD-B029-05C84A0EAAE5}" Directory_="APPDIR" Attributes="260" KeyPath="__34"/>
+    <ROW Component="__35" ComponentId="{6E8DD77B-5FEE-4DAF-AE9C-5CFA4DCF3D51}" Directory_="APPDIR" Attributes="260" KeyPath="__35"/>
+    <ROW Component="__36" ComponentId="{52AD439A-C725-4637-BAA5-58C81CE408FD}" Directory_="APPDIR" Attributes="260" KeyPath="__36"/>
+    <ROW Component="__38" ComponentId="{BF8EC551-D3C3-436E-AB85-5A9885E256D3}" Directory_="APPDIR" Attributes="260" KeyPath="__38"/>
+    <ROW Component="__39" ComponentId="{9D95EE1C-270C-417E-92DF-58C0F7AF39E4}" Directory_="APPDIR" Attributes="260" KeyPath="__39"/>
+    <ROW Component="__4" ComponentId="{474BD2EF-34E8-4BFB-80E6-50E004CE0DD7}" Directory_="APPDIR" Attributes="260" KeyPath="__4"/>
+    <ROW Component="__40" ComponentId="{6922F39E-B60E-47A8-B881-79D9A851BBF8}" Directory_="APPDIR" Attributes="260" KeyPath="__40"/>
+    <ROW Component="__41" ComponentId="{D633034F-068C-47DC-A5B4-27EBDB806AA6}" Directory_="APPDIR" Attributes="260" KeyPath="__41"/>
+    <ROW Component="__42" ComponentId="{93A35122-545F-4B62-B4AE-DBFF68662EAA}" Directory_="APPDIR" Attributes="260" KeyPath="__42"/>
+    <ROW Component="__44" ComponentId="{4E93E326-E594-410A-8BC3-FD95BBC7DDBB}" Directory_="APPDIR" Attributes="260" KeyPath="__44"/>
+    <ROW Component="__45" ComponentId="{E3695362-D130-4763-AB62-EC3150E22CD3}" Directory_="APPDIR" Attributes="260" KeyPath="__45"/>
+    <ROW Component="__46" ComponentId="{D4295956-CAC7-4094-9494-4B539A9EDBCF}" Directory_="APPDIR" Attributes="260" KeyPath="__46"/>
+    <ROW Component="__47" ComponentId="{64B678F3-EBF8-4B97-B0D0-0960F414F9C7}" Directory_="APPDIR" Attributes="260" KeyPath="__47"/>
+    <ROW Component="__48" ComponentId="{F56D4469-7407-43FF-97D7-3F4BD0CA6592}" Directory_="APPDIR" Attributes="260" KeyPath="__48"/>
+    <ROW Component="__49" ComponentId="{90C80FAE-D43F-4561-8FA8-135877B9D356}" Directory_="APPDIR" Attributes="260" KeyPath="__49"/>
+    <ROW Component="__5" ComponentId="{B652BD1C-863D-4ECC-8D90-1851EC914908}" Directory_="APPDIR" Attributes="260" KeyPath="__5"/>
+    <ROW Component="__50" ComponentId="{717D32C5-04DF-4C07-91D5-A5AF1044EA65}" Directory_="APPDIR" Attributes="260" KeyPath="__50"/>
+    <ROW Component="__51" ComponentId="{35A86B5E-BBB3-4709-A110-6F3876766B15}" Directory_="APPDIR" Attributes="260" KeyPath="__51"/>
+    <ROW Component="__52" ComponentId="{E53977F4-F832-4601-AC62-E47E64573523}" Directory_="APPDIR" Attributes="260" KeyPath="__52"/>
+    <ROW Component="__53" ComponentId="{F2DB8C53-0AF6-4F2B-BF7A-EB920CDC30C1}" Directory_="APPDIR" Attributes="260" KeyPath="__53"/>
+    <ROW Component="__54" ComponentId="{DF8BDCF0-35F0-4F98-B158-29419622C870}" Directory_="APPDIR" Attributes="260" KeyPath="__54"/>
+    <ROW Component="__56" ComponentId="{479F2479-8778-45E9-A817-63568C95AE75}" Directory_="APPDIR" Attributes="260" KeyPath="__56"/>
+    <ROW Component="__57" ComponentId="{2334EC22-6546-4C51-8464-5DBE2291657A}" Directory_="APPDIR" Attributes="260" KeyPath="__57"/>
+    <ROW Component="__58" ComponentId="{AB42E1F7-DD2F-41EB-93D9-B324F7AA449F}" Directory_="APPDIR" Attributes="260" KeyPath="__58"/>
+    <ROW Component="__59" ComponentId="{4A270147-6D83-4F3F-A388-7653CC433FFC}" Directory_="APPDIR" Attributes="260" KeyPath="__59"/>
+    <ROW Component="__6" ComponentId="{9A194159-F9D7-411C-BD79-E960F1CE3A7B}" Directory_="APPDIR" Attributes="260" KeyPath="__6"/>
+    <ROW Component="__60" ComponentId="{914F07FF-409A-416F-94D5-437578CF414C}" Directory_="APPDIR" Attributes="260" KeyPath="__60"/>
+    <ROW Component="__61" ComponentId="{A51A233F-EF5C-4798-B708-985C7CB8011E}" Directory_="APPDIR" Attributes="260" KeyPath="__61"/>
+    <ROW Component="__62" ComponentId="{93D0260B-1A76-443D-93A4-B3B1A5749400}" Directory_="APPDIR" Attributes="260" KeyPath="__62"/>
+    <ROW Component="__63" ComponentId="{A20D2EC2-B231-4B40-88BC-FAF1F7193C6B}" Directory_="APPDIR" Attributes="260" KeyPath="__63"/>
+    <ROW Component="__64" ComponentId="{EE111608-B7A6-4A24-A826-5E83A9183A51}" Directory_="APPDIR" Attributes="260" KeyPath="__64"/>
+    <ROW Component="__65" ComponentId="{3293B6D3-D34B-4CE3-AA62-9ADE65EED87D}" Directory_="APPDIR" Attributes="260" KeyPath="__65"/>
+    <ROW Component="__66" ComponentId="{1C5AEBC0-F95E-4D92-AD14-AF88C28FBF67}" Directory_="APPDIR" Attributes="260" KeyPath="__66"/>
+    <ROW Component="__68" ComponentId="{6BF36695-712A-4587-9F55-A9FDBC10F6FF}" Directory_="APPDIR" Attributes="260" KeyPath="__68"/>
+    <ROW Component="__7" ComponentId="{DA3C7F99-A233-4AF2-BBAA-245880BCB2F9}" Directory_="APPDIR" Attributes="260" KeyPath="__7"/>
+    <ROW Component="__70" ComponentId="{36892CC6-DD71-44D4-8BA6-7FB68A2968F3}" Directory_="APPDIR" Attributes="260" KeyPath="__70"/>
+    <ROW Component="__71" ComponentId="{F88BDC67-B7C6-4658-B8D2-A22AF9AA4EFF}" Directory_="APPDIR" Attributes="260" KeyPath="__71"/>
+    <ROW Component="__72" ComponentId="{DFD96D45-C55B-45CA-AC22-D4824983ACF7}" Directory_="APPDIR" Attributes="260" KeyPath="__72"/>
+    <ROW Component="__73" ComponentId="{7E27250F-757A-4D90-96C0-C250565B36BA}" Directory_="APPDIR" Attributes="260" KeyPath="__73"/>
+    <ROW Component="__74" ComponentId="{9047229D-5938-4A67-AE2B-CD9E326FEBA7}" Directory_="APPDIR" Attributes="260" KeyPath="__74"/>
+    <ROW Component="__75" ComponentId="{B2981956-AB19-40B6-A379-0CC3CA24DC33}" Directory_="APPDIR" Attributes="260" KeyPath="__75"/>
+    <ROW Component="__76" ComponentId="{460646EF-64CC-401C-9A75-6503802D070F}" Directory_="APPDIR" Attributes="260" KeyPath="__76"/>
+    <ROW Component="__77" ComponentId="{21F260A8-74D5-49CE-A089-4DE4760B2B5B}" Directory_="APPDIR" Attributes="260" KeyPath="__77"/>
+    <ROW Component="__78" ComponentId="{FE315D48-6A7B-42C6-AC2D-453595DCEB0F}" Directory_="APPDIR" Attributes="260" KeyPath="__78"/>
+    <ROW Component="__83" ComponentId="{BFC3B5C3-6F9D-41D3-B2FC-AF7B907B5991}" Directory_="APPDIR" Attributes="260" KeyPath="__83"/>
+    <ROW Component="__88" ComponentId="{A531A0BE-5C3E-4B9A-91A7-BF2B00C4FCFA}" Directory_="APPDIR" Attributes="260" KeyPath="__88"/>
+    <ROW Component="__89" ComponentId="{76317FD4-F544-4A1A-ADDF-F6BAA280B517}" Directory_="APPDIR" Attributes="260" KeyPath="__89"/>
+    <ROW Component="__9" ComponentId="{2B55ED6F-F58B-4F21-BE96-DB4EAD6E001D}" Directory_="APPDIR" Attributes="260" KeyPath="__9"/>
+    <ROW Component="__90" ComponentId="{1A194C59-F30F-4306-8EFE-364CE3FF9582}" Directory_="APPDIR" Attributes="260" KeyPath="__90"/>
+    <ROW Component="__91" ComponentId="{F01C391F-68CF-45D4-A1A0-8A1C52EA2BEA}" Directory_="APPDIR" Attributes="260" KeyPath="__91"/>
+    <ROW Component="__92" ComponentId="{BD9FDB44-BECB-4023-9DED-86804006DA86}" Directory_="APPDIR" Attributes="260" KeyPath="__92"/>
+    <ROW Component="__93" ComponentId="{30CF77CE-E07F-4843-A7A3-F0AF7F4E7C75}" Directory_="APPDIR" Attributes="260" KeyPath="__93"/>
+    <ROW Component="__94" ComponentId="{53460FD3-32D6-4698-BA55-B35E258F995C}" Directory_="APPDIR" Attributes="260" KeyPath="__94"/>
+    <ROW Component="__95" ComponentId="{A35A5690-7C2B-4203-9F75-5018EB1BD5E1}" Directory_="APPDIR" Attributes="260" KeyPath="__95"/>
+    <ROW Component="ddsfile" ComponentId="{AF95B977-CA6F-4006-BA46-BAF691FF25C3}" Directory_="APPDIR" Attributes="260" KeyPath="ddsfile"/>
+    <ROW Component="emffile" ComponentId="{68F65852-9A63-4EE3-AD61-635B0FA7FCD1}" Directory_="APPDIR" Attributes="260" KeyPath="emffile"/>
+    <ROW Component="fonfile" ComponentId="{A4532DB0-EE9E-42E1-91D0-D6AE01E7C805}" Directory_="APPDIR" Attributes="260" KeyPath="fonfile"/>
+    <ROW Component="mhtmlfile" ComponentId="{0D1F833C-1B53-45D2-94AA-13983F6BD787}" Directory_="APPDIR" Attributes="260" KeyPath="mhtmlfile"/>
+    <ROW Component="mhtmlfile_1" ComponentId="{E24B4EBA-4144-4797-A5B4-CAA4D06D5156}" Directory_="APPDIR" Attributes="260" KeyPath="mhtmlfile_1"/>
+    <ROW Component="ocxfile" ComponentId="{30F84D40-DB85-41BF-BCEC-F6AA9466CB73}" Directory_="APPDIR" Attributes="260" KeyPath="ocxfile"/>
+    <ROW Component="odtfile" ComponentId="{FA407682-870D-4524-BCE1-ADABD01FCAFF}" Directory_="APPDIR" Attributes="260" KeyPath="odtfile"/>
+    <ROW Component="otffile" ComponentId="{603A6BDF-26D9-412F-B072-89512D1C7BA6}" Directory_="APPDIR" Attributes="260" KeyPath="otffile"/>
+    <ROW Component="rlefile" ComponentId="{AAE9B244-D6A3-42D7-B9CB-0AA3D8973A9F}" Directory_="APPDIR" Attributes="260" KeyPath="rlefile"/>
+    <ROW Component="sysfile" ComponentId="{63D38F2E-45DC-48CD-902A-55A56471DF8E}" Directory_="APPDIR" Attributes="260" KeyPath="sysfile"/>
+    <ROW Component="ttcfile" ComponentId="{82DD9075-D819-475C-9E68-9B37F29FE47A}" Directory_="APPDIR" Attributes="260" KeyPath="ttcfile"/>
+    <ROW Component="wmffile" ComponentId="{76E45FD9-1B53-47B6-A187-0325FFC4BD08}" Directory_="APPDIR" Attributes="260" KeyPath="wmffile"/>
+    <ROW Component="xslfile" ComponentId="{29A7F647-158B-400A-8038-CB2015C27E2F}" Directory_="APPDIR" Attributes="260" KeyPath="xslfile"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="AutoHotkey.exe" Component_="AutoHotkey.exe" FileName="AUTOHO~1.EXE|AutoHotkey.exe" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\AutoHotkey.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="AutoHotkeyA32.exe" Component_="AutoHotkeyA32.exe" FileName="AUTOHO~2.EXE|AutoHotkeyA32.exe" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\AutoHotkeyA32.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="Unicode64bit.bin" Component_="Unicode64bit.bin" FileName="UNICOD~1.BIN|Unicode 64-bit.bin" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\Compiler\Unicode 64-bit.bin" SelfReg="false"/>
+    <ROW File="AutoHotkey.chm" Component_="AutoHotkey.chm" FileName="AUTOHO~1.CHM|AutoHotkey.chm" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\AutoHotkey.chm" SelfReg="false"/>
+    <ROW File="AutoHotkeyU32.exe" Component_="AutoHotkeyU32.exe" FileName="AUTOHO~3.EXE|AutoHotkeyU32.exe" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\AutoHotkeyU32.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="AutoHotkeyU64.exe" Component_="AutoHotkeyU64.exe" FileName="AUTOHO~4.EXE|AutoHotkeyU64.exe" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\AutoHotkeyU64.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="Installer.ahk" Component_="Installer.ahk" FileName="INSTAL~1.AHK|Installer.ahk" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\Installer.ahk" SelfReg="false"/>
+    <ROW File="Ahk2Exe.exe" Component_="Ahk2Exe.exe" FileName="Ahk2Exe.exe" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\Compiler\Ahk2Exe.exe" SelfReg="false" DigSign="true"/>
+    <ROW File="ANSI32bit.bin" Component_="Unicode64bit.bin" FileName="ANSI32~1.BIN|ANSI 32-bit.bin" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\Compiler\ANSI 32-bit.bin" SelfReg="false"/>
+    <ROW File="AutoHotkeySC.bin" Component_="Unicode64bit.bin" FileName="AUTOHO~1.BIN|AutoHotkeySC.bin" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\Compiler\AutoHotkeySC.bin" SelfReg="false"/>
+    <ROW File="Unicode32bit.bin" Component_="Unicode64bit.bin" FileName="UNICOD~2.BIN|Unicode 32-bit.bin" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\Compiler\Unicode 32-bit.bin" SelfReg="false"/>
+    <ROW File="license.txt" Component_="Installer.ahk" FileName="license.txt" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\license.txt" SelfReg="false"/>
+    <ROW File="WindowSpy.ahk" Component_="WindowSpy.ahk" FileName="WINDOW~1.AHK|WindowSpy.ahk" Attributes="0" SourcePath="FILES\ProgramFiles64Folder\AutoHotkey\WindowSpy.ahk" SelfReg="false"/>
+    <ROW File="Template.ahk" Component_="Template.ahk" FileName="Template.ahk" Attributes="0" SourcePath="FILES\WindowsFolder\ShellNew\Template.ahk" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.AppVOptionsComponent">
+    <ROW Object="M2V" Options="132"/>
+    <ROW Object="OpenWithProgids" Options="132"/>
+    <ROW Object="aif" Options="132"/>
+    <ROW Object="OpenWithProgids_1" Options="132"/>
+    <ROW Object="OpenWithProgids_2" Options="132"/>
+    <ROW Object="aiff" Options="132"/>
+    <ROW Object="aifc" Options="132"/>
+    <ROW Object="OpenWithProgids_3" Options="132"/>
+    <ROW Object="asf" Options="132"/>
+    <ROW Object="OpenWithProgids_4" Options="132"/>
+    <ROW Object="asx" Options="132"/>
+    <ROW Object="OpenWithProgids_5" Options="132"/>
+    <ROW Object="OpenWithProgids_6" Options="132"/>
+    <ROW Object="OpenWithProgids_7" Options="132"/>
+    <ROW Object="OpenWithProgids_8" Options="132"/>
+    <ROW Object="au" Options="132"/>
+    <ROW Object="ocx" Options="132"/>
+    <ROW Object="OpenWithProgids_9" Options="132"/>
+    <ROW Object="cdxml" Options="132"/>
+    <ROW Object="OpenWithProgids_10" Options="132"/>
+    <ROW Object="mhtml" Options="132"/>
+    <ROW Object="dds" Options="132"/>
+    <ROW Object="OpenWithProgids_11" Options="132"/>
+    <ROW Object="emf" Options="132"/>
+    <ROW Object="wax" Options="132"/>
+    <ROW Object="OpenWithProgids_12" Options="132"/>
+    <ROW Object="OpenWithProgids_13" Options="132"/>
+    <ROW Object="fon" Options="132"/>
+    <ROW Object="OpenWithProgids_14" Options="132"/>
+    <ROW Object="OpenWithProgids_15" Options="132"/>
+    <ROW Object="odt" Options="132"/>
+    <ROW Object="OpenWithProgids_16" Options="132"/>
+    <ROW Object="mk3d" Options="132"/>
+    <ROW Object="mp2v" Options="132"/>
+    <ROW Object="OpenWithProgids_17" Options="132"/>
+    <ROW Object="m1v" Options="132"/>
+    <ROW Object="mht" Options="132"/>
+    <ROW Object="midi" Options="132"/>
+    <ROW Object="sys" Options="132"/>
+    <ROW Object="OpenWithProgids_18" Options="132"/>
+    <ROW Object="OpenWithProgids_19" Options="132"/>
+    <ROW Object="AutoHotkey.exe" Options="132"/>
+    <ROW Object="OpenWithProgids_20" Options="132"/>
+    <ROW Object="OpenWithProgids_21" Options="132"/>
+    <ROW Object="mid" Options="132"/>
+    <ROW Object="otf" Options="132"/>
+    <ROW Object="OpenWithProgids_22" Options="132"/>
+    <ROW Object="ps1xml" Options="132"/>
+    <ROW Object="rle" Options="132"/>
+    <ROW Object="OpenWithProgids_23" Options="132"/>
+    <ROW Object="OpenWithProgids_24" Options="132"/>
+    <ROW Object="pssc" Options="132"/>
+    <ROW Object="OpenWithProgids_25" Options="132"/>
+    <ROW Object="rmi" Options="132"/>
+    <ROW Object="scf" Options="132"/>
+    <ROW Object="OpenWithProgids_26" Options="132"/>
+    <ROW Object="OpenWithProgids_27" Options="132"/>
+    <ROW Object="searchms" Options="132"/>
+    <ROW Object="OpenWithProgids_28" Options="132"/>
+    <ROW Object="OpenWithProgids_29" Options="132"/>
+    <ROW Object="ttc" Options="132"/>
+    <ROW Object="snd" Options="132"/>
+    <ROW Object="OpenWithProgids_30" Options="132"/>
+    <ROW Object="wmf" Options="132"/>
+    <ROW Object="OpenWithProgids_31" Options="132"/>
+    <ROW Object="wmx" Options="132"/>
+    <ROW Object="OpenWithProgids_32" Options="132"/>
+    <ROW Object="wvx" Options="132"/>
+    <ROW Object="OpenWithProgids_33" Options="132"/>
+    <ROW Object="xsl" Options="132"/>
+    <ROW Object="OpenWithProgids_34" Options="132"/>
+    <ROW Object="AutoHotkey" Options="132"/>
+    <ROW Object="Search" Options="132"/>
+    <ROW Object="Ahk2Exe.exe" Options="132"/>
+    <ROW Object="Current" Options="132"/>
+    <ROW Object="SHC" Options="132"/>
+    <ROW Object="ARP" Options="132"/>
+    <ROW Object="Explorer_1" Options="132"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="en" InstallationType="4" UseLargeSchema="true" MsiPackageType="x64"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_en.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DigCertStoreComponent">
+    <ROW TimeStampUrl="http://timestamp.digicert.com" SignOptions="0" SignTool="0" UseSha256="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]" MultiBuildTarget="DefaultBuild:[ProgramFiles64Folder][ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiExtComponent">
+    <ROW Extension="ahk" Component_="Ahk2Exe.exe" ProgId_="AutoHotkeyScript" Feature_="MainFeature"/>
+    <ROW Extension="ahk" Component_="AutoHotkey.exe" ProgId_="AutoHotkeyScript" Feature_="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="AutoHotkey.exe"/>
+    <ROW Feature_="MainFeature" Component_="AutoHotkeyA32.exe"/>
+    <ROW Feature_="MainFeature" Component_="Unicode64bit.bin"/>
+    <ROW Feature_="MainFeature" Component_="AutoHotkey.chm"/>
+    <ROW Feature_="MainFeature" Component_="AutoHotkeyU32.exe"/>
+    <ROW Feature_="MainFeature" Component_="AutoHotkeyU64.exe"/>
+    <ROW Feature_="MainFeature" Component_="Installer.ahk"/>
+    <ROW Feature_="MainFeature" Component_="Ahk2Exe.exe"/>
+    <ROW Feature_="MainFeature" Component_="Template.ahk"/>
+    <ROW Feature_="MainFeature" Component_="_"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.MPEG"/>
+    <ROW Feature_="MainFeature" Component_="__1"/>
+    <ROW Feature_="MainFeature" Component_="__2"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.AIFF"/>
+    <ROW Feature_="MainFeature" Component_="__3"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.AIFF_1"/>
+    <ROW Feature_="MainFeature" Component_="__4"/>
+    <ROW Feature_="MainFeature" Component_="__5"/>
+    <ROW Feature_="MainFeature" Component_="__6"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.AIFF_2"/>
+    <ROW Feature_="MainFeature" Component_="__7"/>
+    <ROW Feature_="MainFeature" Component_="__9"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.ASF"/>
+    <ROW Feature_="MainFeature" Component_="__10"/>
+    <ROW Feature_="MainFeature" Component_="__11"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.AU"/>
+    <ROW Feature_="MainFeature" Component_="__12"/>
+    <ROW Feature_="MainFeature" Component_="ocxfile"/>
+    <ROW Feature_="MainFeature" Component_="__13"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.ASX"/>
+    <ROW Feature_="MainFeature" Component_="__14"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.MPEG_1"/>
+    <ROW Feature_="MainFeature" Component_="__15"/>
+    <ROW Feature_="MainFeature" Component_="__16"/>
+    <ROW Feature_="MainFeature" Component_="__17"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.MIDI"/>
+    <ROW Feature_="MainFeature" Component_="__18"/>
+    <ROW Feature_="MainFeature" Component_="__19"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.PowerShellCmdletDefinitionXML.1"/>
+    <ROW Feature_="MainFeature" Component_="__20"/>
+    <ROW Feature_="MainFeature" Component_="__21"/>
+    <ROW Feature_="MainFeature" Component_="__22"/>
+    <ROW Feature_="MainFeature" Component_="ddsfile"/>
+    <ROW Feature_="MainFeature" Component_="__23"/>
+    <ROW Feature_="MainFeature" Component_="__24"/>
+    <ROW Feature_="MainFeature" Component_="__25"/>
+    <ROW Feature_="MainFeature" Component_="emffile"/>
+    <ROW Feature_="MainFeature" Component_="__26"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.WAX"/>
+    <ROW Feature_="MainFeature" Component_="__27"/>
+    <ROW Feature_="MainFeature" Component_="__28"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.MK3D"/>
+    <ROW Feature_="MainFeature" Component_="__30"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.MPEG_2"/>
+    <ROW Feature_="MainFeature" Component_="__31"/>
+    <ROW Feature_="MainFeature" Component_="__32"/>
+    <ROW Feature_="MainFeature" Component_="fonfile"/>
+    <ROW Feature_="MainFeature" Component_="__33"/>
+    <ROW Feature_="MainFeature" Component_="__34"/>
+    <ROW Feature_="MainFeature" Component_="__35"/>
+    <ROW Feature_="MainFeature" Component_="odtfile"/>
+    <ROW Feature_="MainFeature" Component_="__36"/>
+    <ROW Feature_="MainFeature" Component_="__38"/>
+    <ROW Feature_="MainFeature" Component_="__39"/>
+    <ROW Feature_="MainFeature" Component_="__40"/>
+    <ROW Feature_="MainFeature" Component_="__41"/>
+    <ROW Feature_="MainFeature" Component_="mhtmlfile"/>
+    <ROW Feature_="MainFeature" Component_="__42"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.MIDI_1"/>
+    <ROW Feature_="MainFeature" Component_="__44"/>
+    <ROW Feature_="MainFeature" Component_="__45"/>
+    <ROW Feature_="MainFeature" Component_="sysfile"/>
+    <ROW Feature_="MainFeature" Component_="__46"/>
+    <ROW Feature_="MainFeature" Component_="mhtmlfile_1"/>
+    <ROW Feature_="MainFeature" Component_="__47"/>
+    <ROW Feature_="MainFeature" Component_="__48"/>
+    <ROW Feature_="MainFeature" Component_="__49"/>
+    <ROW Feature_="MainFeature" Component_="otffile"/>
+    <ROW Feature_="MainFeature" Component_="__50"/>
+    <ROW Feature_="MainFeature" Component_="__51"/>
+    <ROW Feature_="MainFeature" Component_="__52"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.PowerShellXMLData.1"/>
+    <ROW Feature_="MainFeature" Component_="__53"/>
+    <ROW Feature_="MainFeature" Component_="rlefile"/>
+    <ROW Feature_="MainFeature" Component_="__54"/>
+    <ROW Feature_="MainFeature" Component_="__56"/>
+    <ROW Feature_="MainFeature" Component_="Microsoft.PowerShellSessionConfiguration.1"/>
+    <ROW Feature_="MainFeature" Component_="__57"/>
+    <ROW Feature_="MainFeature" Component_="__58"/>
+    <ROW Feature_="MainFeature" Component_="__59"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.MIDI_2"/>
+    <ROW Feature_="MainFeature" Component_="__60"/>
+    <ROW Feature_="MainFeature" Component_="SHCmdFile"/>
+    <ROW Feature_="MainFeature" Component_="__61"/>
+    <ROW Feature_="MainFeature" Component_="__62"/>
+    <ROW Feature_="MainFeature" Component_="ttcfile"/>
+    <ROW Feature_="MainFeature" Component_="__63"/>
+    <ROW Feature_="MainFeature" Component_="SearchFolder"/>
+    <ROW Feature_="MainFeature" Component_="__64"/>
+    <ROW Feature_="MainFeature" Component_="__65"/>
+    <ROW Feature_="MainFeature" Component_="__66"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.AU_1"/>
+    <ROW Feature_="MainFeature" Component_="__68"/>
+    <ROW Feature_="MainFeature" Component_="__70"/>
+    <ROW Feature_="MainFeature" Component_="wmffile"/>
+    <ROW Feature_="MainFeature" Component_="__71"/>
+    <ROW Feature_="MainFeature" Component_="__72"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.ASX_1"/>
+    <ROW Feature_="MainFeature" Component_="__73"/>
+    <ROW Feature_="MainFeature" Component_="__74"/>
+    <ROW Feature_="MainFeature" Component_="WMP11.AssocFile.WVX"/>
+    <ROW Feature_="MainFeature" Component_="__75"/>
+    <ROW Feature_="MainFeature" Component_="__76"/>
+    <ROW Feature_="MainFeature" Component_="xslfile"/>
+    <ROW Feature_="MainFeature" Component_="__77"/>
+    <ROW Feature_="MainFeature" Component_="InstallDir"/>
+    <ROW Feature_="MainFeature" Component_="StartMenuFolder"/>
+    <ROW Feature_="MainFeature" Component_="Version"/>
+    <ROW Feature_="MainFeature" Component_="__78"/>
+    <ROW Feature_="MainFeature" Component_="InstalledWin32AppsRevision"/>
+    <ROW Feature_="MainFeature" Component_="__83"/>
+    <ROW Feature_="MainFeature" Component_="__88"/>
+    <ROW Feature_="MainFeature" Component_="Data"/>
+    <ROW Feature_="MainFeature" Component_="__89"/>
+    <ROW Feature_="MainFeature" Component_="__90"/>
+    <ROW Feature_="MainFeature" Component_="__91"/>
+    <ROW Feature_="MainFeature" Component_="__92"/>
+    <ROW Feature_="MainFeature" Component_="__93"/>
+    <ROW Feature_="MainFeature" Component_="__94"/>
+    <ROW Feature_="MainFeature" Component_="GlobalAssocChangedCounter"/>
+    <ROW Feature_="MainFeature" Component_="__95"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+    <ROW Feature_="MainFeature" Component_="WindowSpy.ahk"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIconsComponent">
+    <ROW Name="Installer.exe" SourcePath="FILES\ICONS\ico4A46.ico" Index="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="URL" FileName="AUTOHO~1.URL|AutoHotkey Website.url" DirProperty="APPDIR" Section="InternetShortcut" Key="URL" Value="https://autohotkey.com/" Action="0" Component_="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] cannot be installed on [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] cannot be installed on [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] cannot be installed on [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] cannot be installed on [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiProgIdComponent">
+    <ROW ProgId="AutoHotkeyScript" Description="AutoHotkey Script"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="ARP" Root="2" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\UFH\ARP" Name="\"/>
+    <ROW Registry="Ahk2Exe.exe" Root="2" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Ahk2Exe.exe" Name="\"/>
+    <ROW Registry="AutoHotkey" Root="2" Key="SOFTWARE\AutoHotkey" Name="\"/>
+    <ROW Registry="AutoHotkey.exe" Root="2" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\AutoHotkey.exe" Name="\"/>
+    <ROW Registry="Current" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount\$de${75adef4e-bd99-4a1b-9117-6190936a955d}$$windows.data.unifiedtile.localstartvolatiletilepropertiesmap\Current" Name="\"/>
+    <ROW Registry="Data" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount\$de${75adef4e-bd99-4a1b-9117-6190936a955d}$$windows.data.unifiedtile.localstartvolatiletilepropertiesmap\Current" Name="Data" Value="#x02000000104546e98253d70100000000434201000d120a033457007e007b00310041004300310034004500370037002d0030003200450037002d0034004500350044002d0042003700340034002d003200450042003100410045003500310039003800420037007d005c004d0053005000410049004e0054002e00450058004500c70acc12143ac61ec4b69ad8c28dd3eb01003957007e007b00310041004300310034004500370037002d0030003200450037002d0034004500350044002d0042003700340034002d003200450042003100410045003500310039003800420037007d005c0053004e0049005000500049004e00470054004f004f004c002e00450058004500c70a7390813bc61ec4b69ad8c28dd3eb01005f57007e007b00370043003500410034003000450046002d0041003000460042002d0034004200460043002d0038003700340041002d004300300046003200450030004200390046004100380045007d005c00430041005000480059004f004e005c0041004400560041004e00430045004400200049004e005300540041004c004c00450052002000310038002e0033005c00420049004e005c005800380036005c00520045005000410043004b0041004700450052002e00450058004500c70ac61eca38c51401c61ef0b0ebb8a5f0d4eb010000" Component_="Data" VirtualValue="#x"/>
+    <ROW Registry="Explorer_1" Root="2" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" Name="\"/>
+    <ROW Registry="GlobalAssocChangedCounter" Root="2" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" Name="GlobalAssocChangedCounter" Value="#1" Component_="GlobalAssocChangedCounter" VirtualValue="#"/>
+    <ROW Registry="InstallDir" Root="2" Key="SOFTWARE\AutoHotkey" Name="InstallDir" Value="[APPDIR]" Component_="InstallDir"/>
+    <ROW Registry="InstalledWin32AppsRevision" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Search" Name="InstalledWin32AppsRevision" Value="[\{]14CB29D0-CD20-4BFA-871E-4DBC131E8A9E[\}]" Component_="InstalledWin32AppsRevision"/>
+    <ROW Registry="M2V" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.M2V" Name="\"/>
+    <ROW Registry="Microsoft.PowerShellCmdletDefinitio" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.cdxml\OpenWithProgids" Name="Microsoft.PowerShellCmdletDefinitionXML.1" Component_="Microsoft.PowerShellCmdletDefinitionXML.1"/>
+    <ROW Registry="Microsoft.PowerShellSessionConfigur" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.pssc\OpenWithProgids" Name="Microsoft.PowerShellSessionConfiguration.1" Component_="Microsoft.PowerShellSessionConfiguration.1"/>
+    <ROW Registry="Microsoft.PowerShellXMLData.1" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ps1xml\OpenWithProgids" Name="Microsoft.PowerShellXMLData.1" Component_="Microsoft.PowerShellXMLData.1"/>
+    <ROW Registry="OpenWithProgids" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.M2V\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_1" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aiff\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_10" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.cdxml\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_11" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.dds\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_12" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.emf\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_13" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wax\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_14" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mk3d\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_15" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mp2v\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_16" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.fon\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_17" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.odt\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_18" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mht\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_19" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.midi\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_2" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aif\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_20" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sys\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_21" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mhtml\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_22" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.otf\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_23" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ps1xml\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_24" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rle\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_25" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.pssc\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_26" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rmi\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_27" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.scf\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_28" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ttc\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_29" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.search-ms\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_3" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aifc\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_30" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.snd\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_31" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmf\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_32" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmx\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_33" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wvx\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_34" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.xsl\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_4" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asf\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_5" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.au\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_6" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ocx\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_7" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asx\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_8" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.m1v\OpenWithProgids" Name="\"/>
+    <ROW Registry="OpenWithProgids_9" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mid\OpenWithProgids" Name="\"/>
+    <ROW Registry="SHC" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\UFH\SHC" Name="\"/>
+    <ROW Registry="SHCmdFile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.scf\OpenWithProgids" Name="SHCmdFile" Component_="SHCmdFile"/>
+    <ROW Registry="Search" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Search" Name="\"/>
+    <ROW Registry="SearchFolder" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.search-ms\OpenWithProgids" Name="SearchFolder" Component_="SearchFolder"/>
+    <ROW Registry="StartMenuFolder" Root="2" Key="SOFTWARE\AutoHotkey" Name="StartMenuFolder" Value="AutoHotkey" Component_="StartMenuFolder"/>
+    <ROW Registry="Version" Root="2" Key="SOFTWARE\AutoHotkey" Name="Version" Value="1.1.33.09" Component_="Version"/>
+    <ROW Registry="WMP11.AssocFile.AIFF" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aiff\OpenWithProgids" Name="WMP11.AssocFile.AIFF" Component_="WMP11.AssocFile.AIFF"/>
+    <ROW Registry="WMP11.AssocFile.AIFF_1" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aif\OpenWithProgids" Name="WMP11.AssocFile.AIFF" Component_="WMP11.AssocFile.AIFF_1"/>
+    <ROW Registry="WMP11.AssocFile.AIFF_2" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aifc\OpenWithProgids" Name="WMP11.AssocFile.AIFF" Component_="WMP11.AssocFile.AIFF_2"/>
+    <ROW Registry="WMP11.AssocFile.ASF" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asf\OpenWithProgids" Name="WMP11.AssocFile.ASF" Component_="WMP11.AssocFile.ASF"/>
+    <ROW Registry="WMP11.AssocFile.ASX" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asx\OpenWithProgids" Name="WMP11.AssocFile.ASX" Component_="WMP11.AssocFile.ASX"/>
+    <ROW Registry="WMP11.AssocFile.ASX_1" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmx\OpenWithProgids" Name="WMP11.AssocFile.ASX" Component_="WMP11.AssocFile.ASX_1"/>
+    <ROW Registry="WMP11.AssocFile.AU" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.au\OpenWithProgids" Name="WMP11.AssocFile.AU" Component_="WMP11.AssocFile.AU"/>
+    <ROW Registry="WMP11.AssocFile.AU_1" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.snd\OpenWithProgids" Name="WMP11.AssocFile.AU" Component_="WMP11.AssocFile.AU_1"/>
+    <ROW Registry="WMP11.AssocFile.MIDI" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mid\OpenWithProgids" Name="WMP11.AssocFile.MIDI" Component_="WMP11.AssocFile.MIDI"/>
+    <ROW Registry="WMP11.AssocFile.MIDI_1" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.midi\OpenWithProgids" Name="WMP11.AssocFile.MIDI" Component_="WMP11.AssocFile.MIDI_1"/>
+    <ROW Registry="WMP11.AssocFile.MIDI_2" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rmi\OpenWithProgids" Name="WMP11.AssocFile.MIDI" Component_="WMP11.AssocFile.MIDI_2"/>
+    <ROW Registry="WMP11.AssocFile.MK3D" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mk3d\OpenWithProgids" Name="WMP11.AssocFile.MK3D" Component_="WMP11.AssocFile.MK3D"/>
+    <ROW Registry="WMP11.AssocFile.MPEG" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.M2V\OpenWithProgids" Name="WMP11.AssocFile.MPEG" Component_="WMP11.AssocFile.MPEG"/>
+    <ROW Registry="WMP11.AssocFile.MPEG_1" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.m1v\OpenWithProgids" Name="WMP11.AssocFile.MPEG" Component_="WMP11.AssocFile.MPEG_1"/>
+    <ROW Registry="WMP11.AssocFile.MPEG_2" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mp2v\OpenWithProgids" Name="WMP11.AssocFile.MPEG" Component_="WMP11.AssocFile.MPEG_2"/>
+    <ROW Registry="WMP11.AssocFile.WAX" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wax\OpenWithProgids" Name="WMP11.AssocFile.WAX" Component_="WMP11.AssocFile.WAX"/>
+    <ROW Registry="WMP11.AssocFile.WVX" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wvx\OpenWithProgids" Name="WMP11.AssocFile.WVX" Component_="WMP11.AssocFile.WVX"/>
+    <ROW Registry="_" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.M2V" Component_="_"/>
+    <ROW Registry="__1" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.M2V\OpenWithProgids" Component_="__1"/>
+    <ROW Registry="__10" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asf\OpenWithProgids" Component_="__10"/>
+    <ROW Registry="__11" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asx" Component_="__11"/>
+    <ROW Registry="__12" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.au\OpenWithProgids" Component_="__12"/>
+    <ROW Registry="__13" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ocx\OpenWithProgids" Component_="__13"/>
+    <ROW Registry="__14" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asx\OpenWithProgids" Component_="__14"/>
+    <ROW Registry="__15" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.m1v\OpenWithProgids" Component_="__15"/>
+    <ROW Registry="__16" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.au" Component_="__16"/>
+    <ROW Registry="__17" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ocx" Component_="__17"/>
+    <ROW Registry="__18" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mid\OpenWithProgids" Component_="__18"/>
+    <ROW Registry="__19" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.cdxml" Component_="__19"/>
+    <ROW Registry="__2" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aif" Component_="__2"/>
+    <ROW Registry="__20" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.cdxml\OpenWithProgids" Component_="__20"/>
+    <ROW Registry="__21" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mhtml" Component_="__21"/>
+    <ROW Registry="__22" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.dds" Component_="__22"/>
+    <ROW Registry="__23" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.dds\OpenWithProgids" Component_="__23"/>
+    <ROW Registry="__24" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.emf" Component_="__24"/>
+    <ROW Registry="__25" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wax" Component_="__25"/>
+    <ROW Registry="__26" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.emf\OpenWithProgids" Component_="__26"/>
+    <ROW Registry="__27" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wax\OpenWithProgids" Component_="__27"/>
+    <ROW Registry="__28" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.fon" Component_="__28"/>
+    <ROW Registry="__3" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aiff\OpenWithProgids" Component_="__3"/>
+    <ROW Registry="__30" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mk3d\OpenWithProgids" Component_="__30"/>
+    <ROW Registry="__31" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mp2v\OpenWithProgids" Component_="__31"/>
+    <ROW Registry="__32" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.odt" Component_="__32"/>
+    <ROW Registry="__33" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.fon\OpenWithProgids" Component_="__33"/>
+    <ROW Registry="__34" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mk3d" Component_="__34"/>
+    <ROW Registry="__35" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mp2v" Component_="__35"/>
+    <ROW Registry="__36" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.odt\OpenWithProgids" Component_="__36"/>
+    <ROW Registry="__38" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.m1v" Component_="__38"/>
+    <ROW Registry="__39" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mht" Component_="__39"/>
+    <ROW Registry="__4" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aif\OpenWithProgids" Component_="__4"/>
+    <ROW Registry="__40" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.midi" Component_="__40"/>
+    <ROW Registry="__41" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sys" Component_="__41"/>
+    <ROW Registry="__42" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mht\OpenWithProgids" Component_="__42"/>
+    <ROW Registry="__44" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.midi\OpenWithProgids" Component_="__44"/>
+    <ROW Registry="__45" Root="2" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\AutoHotkey.exe" Value="[#AutoHotkey.exe]" Component_="__45"/>
+    <ROW Registry="__46" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sys\OpenWithProgids" Component_="__46"/>
+    <ROW Registry="__47" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mhtml\OpenWithProgids" Component_="__47"/>
+    <ROW Registry="__48" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mid" Component_="__48"/>
+    <ROW Registry="__49" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.otf" Component_="__49"/>
+    <ROW Registry="__5" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aiff" Component_="__5"/>
+    <ROW Registry="__50" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.otf\OpenWithProgids" Component_="__50"/>
+    <ROW Registry="__51" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ps1xml" Component_="__51"/>
+    <ROW Registry="__52" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rle" Component_="__52"/>
+    <ROW Registry="__53" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ps1xml\OpenWithProgids" Component_="__53"/>
+    <ROW Registry="__54" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rle\OpenWithProgids" Component_="__54"/>
+    <ROW Registry="__56" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.pssc" Component_="__56"/>
+    <ROW Registry="__57" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.pssc\OpenWithProgids" Component_="__57"/>
+    <ROW Registry="__58" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rmi" Component_="__58"/>
+    <ROW Registry="__59" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.scf" Component_="__59"/>
+    <ROW Registry="__6" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aifc" Component_="__6"/>
+    <ROW Registry="__60" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rmi\OpenWithProgids" Component_="__60"/>
+    <ROW Registry="__61" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.scf\OpenWithProgids" Component_="__61"/>
+    <ROW Registry="__62" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.search-ms" Component_="__62"/>
+    <ROW Registry="__63" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ttc\OpenWithProgids" Component_="__63"/>
+    <ROW Registry="__64" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.search-ms\OpenWithProgids" Component_="__64"/>
+    <ROW Registry="__65" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ttc" Component_="__65"/>
+    <ROW Registry="__66" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.snd" Component_="__66"/>
+    <ROW Registry="__68" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.snd\OpenWithProgids" Component_="__68"/>
+    <ROW Registry="__7" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aifc\OpenWithProgids" Component_="__7"/>
+    <ROW Registry="__70" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmf" Component_="__70"/>
+    <ROW Registry="__71" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmf\OpenWithProgids" Component_="__71"/>
+    <ROW Registry="__72" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmx" Component_="__72"/>
+    <ROW Registry="__73" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmx\OpenWithProgids" Component_="__73"/>
+    <ROW Registry="__74" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wvx" Component_="__74"/>
+    <ROW Registry="__75" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wvx\OpenWithProgids" Component_="__75"/>
+    <ROW Registry="__76" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.xsl" Component_="__76"/>
+    <ROW Registry="__77" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.xsl\OpenWithProgids" Component_="__77"/>
+    <ROW Registry="__78" Root="2" Key="SOFTWARE\AutoHotkey" Component_="__78"/>
+    <ROW Registry="__83" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Search" Component_="__83"/>
+    <ROW Registry="__88" Root="2" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Ahk2Exe.exe" Value="[#Ahk2Exe.exe]" Component_="__88"/>
+    <ROW Registry="__89" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount\$de${75adef4e-bd99-4a1b-9117-6190936a955d}$$windows.data.unifiedtile.localstartvolatiletilepropertiesmap\Current" Component_="__89"/>
+    <ROW Registry="__9" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asf" Component_="__9"/>
+    <ROW Registry="__90" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\UFH\SHC" Name="5" Value="[ProgramMenuFolder]AutoHotkey\AutoHotkey.lnk[~][#AutoHotkey.exe][~][~]" Component_="__90"/>
+    <ROW Registry="__91" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\UFH\SHC" Name="6" Value="[ProgramMenuFolder]AutoHotkey\Convert .ahk to .exe.lnk[~][#Ahk2Exe.exe][~][~]" Component_="__91"/>
+    <ROW Registry="__92" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\UFH\SHC" Component_="__92"/>
+    <ROW Registry="__93" Root="2" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\UFH\ARP" Name="1" Value="Software\Microsoft\Windows\CurrentVersion\Uninstall[~]AutoHotkey[~]&quot;[#AutoHotkey.exe]&quot; &quot;[#Installer.ahk]&quot;[~]" Component_="__93"/>
+    <ROW Registry="__94" Root="2" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\UFH\ARP" Component_="__94"/>
+    <ROW Registry="__95" Root="2" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer" Component_="__95"/>
+    <ROW Registry="aif" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aif" Name="\"/>
+    <ROW Registry="aifc" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aifc" Name="\"/>
+    <ROW Registry="aiff" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aiff" Name="\"/>
+    <ROW Registry="asf" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asf" Name="\"/>
+    <ROW Registry="asx" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asx" Name="\"/>
+    <ROW Registry="au" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.au" Name="\"/>
+    <ROW Registry="cdxml" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.cdxml" Name="\"/>
+    <ROW Registry="dds" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.dds" Name="\"/>
+    <ROW Registry="ddsfile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.dds\OpenWithProgids" Name="ddsfile" Component_="ddsfile"/>
+    <ROW Registry="emf" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.emf" Name="\"/>
+    <ROW Registry="emffile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.emf\OpenWithProgids" Name="emffile" Component_="emffile"/>
+    <ROW Registry="fon" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.fon" Name="\"/>
+    <ROW Registry="fonfile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.fon\OpenWithProgids" Name="fonfile" Component_="fonfile"/>
+    <ROW Registry="m1v" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.m1v" Name="\"/>
+    <ROW Registry="mht" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mht" Name="\"/>
+    <ROW Registry="mhtml" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mhtml" Name="\"/>
+    <ROW Registry="mhtmlfile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mht\OpenWithProgids" Name="mhtmlfile" Component_="mhtmlfile"/>
+    <ROW Registry="mhtmlfile_1" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mhtml\OpenWithProgids" Name="mhtmlfile" Component_="mhtmlfile_1"/>
+    <ROW Registry="mid" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mid" Name="\"/>
+    <ROW Registry="midi" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.midi" Name="\"/>
+    <ROW Registry="mk3d" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mk3d" Name="\"/>
+    <ROW Registry="mp2v" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mp2v" Name="\"/>
+    <ROW Registry="ocx" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ocx" Name="\"/>
+    <ROW Registry="ocxfile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ocx\OpenWithProgids" Name="ocxfile" Component_="ocxfile"/>
+    <ROW Registry="odt" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.odt" Name="\"/>
+    <ROW Registry="odtfile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.odt\OpenWithProgids" Name="odtfile" Component_="odtfile"/>
+    <ROW Registry="otf" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.otf" Name="\"/>
+    <ROW Registry="otffile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.otf\OpenWithProgids" Name="otffile" Component_="otffile"/>
+    <ROW Registry="ps1xml" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ps1xml" Name="\"/>
+    <ROW Registry="pssc" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.pssc" Name="\"/>
+    <ROW Registry="rle" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rle" Name="\"/>
+    <ROW Registry="rlefile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rle\OpenWithProgids" Name="rlefile" Component_="rlefile"/>
+    <ROW Registry="rmi" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rmi" Name="\"/>
+    <ROW Registry="scf" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.scf" Name="\"/>
+    <ROW Registry="searchms" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.search-ms" Name="\"/>
+    <ROW Registry="snd" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.snd" Name="\"/>
+    <ROW Registry="sys" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sys" Name="\"/>
+    <ROW Registry="sysfile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sys\OpenWithProgids" Name="sysfile" Component_="sysfile"/>
+    <ROW Registry="ttc" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ttc" Name="\"/>
+    <ROW Registry="ttcfile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ttc\OpenWithProgids" Name="ttcfile" Component_="ttcfile"/>
+    <ROW Registry="wax" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wax" Name="\"/>
+    <ROW Registry="wmf" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmf" Name="\"/>
+    <ROW Registry="wmffile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmf\OpenWithProgids" Name="wmffile" Component_="wmffile"/>
+    <ROW Registry="wmx" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmx" Name="\"/>
+    <ROW Registry="wvx" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wvx" Name="\"/>
+    <ROW Registry="xsl" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.xsl" Name="\"/>
+    <ROW Registry="xslfile" Root="1" Key="SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.xsl\OpenWithProgids" Name="xslfile" Component_="xslfile"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="AutoHotkey" Directory_="SHORTCUTDIR" Name="AUTOHO~3|AutoHotkey" Component_="AutoHotkey.exe" Target="[#AutoHotkey.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="AutoHotkeyHelpFile" Directory_="SHORTCUTDIR" Name="AUTOHO~1|AutoHotkey Help File" Component_="AutoHotkey.chm" Target="[#AutoHotkey.chm]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="AutoHotkeySetup" Directory_="SHORTCUTDIR" Name="AUTOHO~2|AutoHotkey Setup" Component_="Installer.ahk" Target="[#Installer.ahk]" Hotkey="0" Icon_="Installer.exe" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+    <ROW Shortcut="Convert.ahkto.exe" Directory_="SHORTCUTDIR" Name="CONVER~1.EXE|Convert .ahk to .exe" Component_="Ahk2Exe.exe" Target="[#Ahk2Exe.exe]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="Compiler_Dir"/>
+    <ROW Shortcut="Website" Directory_="SHORTCUTDIR" Name="Website" Component_="SHORTCUTDIR" Target="C:\Users\WDAGUtilityAccount\Downloads\AutoHotkey-Files\AutoHotkey\FILES\ProgramFiles64Folder\AutoHotkey\AutoHotkey Website.url" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="SHORTCUTDIR"/>
+    <ROW Shortcut="WindowSpy" Directory_="SHORTCUTDIR" Name="WINDOW~1|Window Spy" Component_="WindowSpy.ahk" Target="[#WindowSpy.ahk]" Hotkey="0" IconIndex="0" ShowCmd="1" WkDir="APPDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiVerbComponent">
+    <ROW Extension_="ahk" Component_="Ahk2Exe.exe" Verb="Compile-Gui" Sequence="1" Command="&amp;Compile-Gui" Argument="/gui /in &quot;%l&quot; %*"/>
+    <ROW Extension_="ahk" Component_="Ahk2Exe.exe" Verb="Compile" Sequence="2" Command="&amp;Compile" Argument="/in &quot;%l&quot; %*"/>
+    <ROW Extension_="ahk" Component_="AutoHotkey.exe" Verb="Open" Sequence="3" Command="&amp;Open" Argument="&quot;%1&quot; %*"/>
+  </COMPONENT>
+</DOCUMENT>

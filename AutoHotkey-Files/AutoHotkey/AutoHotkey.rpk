@@ -1,0 +1,294 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<!--  Advanced Installer Repackager Data  -->
+<RepackagerData Version="18.3" RootPath="FILES">
+  <ProductDetails>
+    <Property Name="SessionMonitoring" Value="false"/>
+    <Property Name="UiAutomation" Value="false"/>
+    <Property Name="ProccesMonitor" Value="true"/>
+    <Property Name="CheckMachineState" Value="true"/>
+    <Property Name="ProductCompany" Value="Your Company"/>
+    <Property Name="ProductName" Value="AutoHotkey"/>
+    <Property Name="PromptBeforeInstall" Value="false"/>
+    <Property Name="PromptAfterInstall" Value="true"/>
+    <Property Name="DetectEmbeddedMsi" Value="false"/>
+    <Property Name="CreateNoiseFile" Value="false"/>
+    <Property Name="SaveSnapshots" Value="false"/>
+    <Property Name="GenerateBat" Value="true"/>
+    <Property Name="GeneratePowershell" Value="false"/>
+    <Property Name="Configuration" Value="Default"/>
+    <Property Name="OutputPath" Value="C:\Users\WDAGUtilityAccount\Downloads\AutoHotkey-Files"/>
+    <Property Name="ProductLanguage" Value="1033"/>
+    <Property Name="ProductVersion" Value="1.1.33.9"/>
+    <Property Name="Date" Value="5/28/2021 12:33:57 AM"/>
+    <Property Name="OperatingSystem" Value="10.0.19041 SP0 (workstation) x64"/>
+    <Property Name="Scanner" Value="Advanced Repackager (x64)"/>
+    <Property Name="SourcePackage">
+      <SourcePackage Path="C:\Users\WDAGUtilityAccount\Downloads\AutoHotkey_1.1.33.09_setup.exe"/>
+    </Property>
+  </ProductDetails>
+  <FileSystem>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey" Attributes="16" CurrentSize="0"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\AutoHotkeyA32.exe" Attributes="32" CurrentSize="786432"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\AutoHotkey.exe" Attributes="32" CurrentSize="1307136"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\AutoHotkey Website.url" Attributes="32" CurrentSize="100"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\Compiler" Attributes="16" CurrentSize="0"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\Compiler\Unicode 64-bit.bin" Attributes="32" CurrentSize="1219072"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\AutoHotkey.chm" Attributes="32" CurrentSize="1888880"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\AutoHotkeyU32.exe" Attributes="32" CurrentSize="905728"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\Installer.ahk" Attributes="32" CurrentSize="65952"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\AutoHotkeyU64.exe" Attributes="32" CurrentSize="1307136"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\Compiler\Ahk2Exe.exe" Attributes="32" CurrentSize="888320"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\Compiler\ANSI 32-bit.bin" Attributes="32" CurrentSize="717824"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\Compiler\AutoHotkeySC.bin" Attributes="32" CurrentSize="1219072"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\Compiler\Unicode 32-bit.bin" Attributes="32" CurrentSize="838144"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\license.txt" Attributes="32" CurrentSize="18120"/>
+    <FILE Operation="+" Excluded="false" Path="ProgramFiles64Folder\AutoHotkey\WindowSpy.ahk" Attributes="32" CurrentSize="5871"/>
+    <FILE Operation="+" Excluded="true" Path="ProgramMenuFolder\AutoHotkey" Attributes="16" CurrentSize="0"/>
+    <FILE Operation="+" Excluded="false" Path="WindowsFolder\ShellNew" Attributes="16" CurrentSize="0"/>
+    <FILE Operation="+" Excluded="false" Path="WindowsFolder\ShellNew\Template.ahk" Attributes="32" CurrentSize="324"/>
+    <LINK Operation="+" Excluded="false" Path="ProgramMenuFolder\AutoHotkey\AutoHotkey Setup.lnk" TargetPath="ProgramFiles64Folder\AutoHotkey\Installer.ahk" WorkingDir="" IconPath="ICONS\ico4A46.ico" IconIndex="0" Arguments="" Description="" ShowCmd="1" HotKey="0" Flags="16587"/>
+    <LINK Operation="+" Excluded="false" Path="ProgramMenuFolder\AutoHotkey\AutoHotkey Help File.lnk" TargetPath="ProgramFiles64Folder\AutoHotkey\AutoHotkey.chm" WorkingDir="" IconPath="" IconIndex="0" Arguments="" Description="" ShowCmd="1" HotKey="0" Flags="139"/>
+    <LINK Operation="+" Excluded="false" Path="ProgramMenuFolder\AutoHotkey\Website.lnk" TargetPath="ProgramFiles64Folder\AutoHotkey\AutoHotkey Website.url" WorkingDir="" IconPath="" IconIndex="0" Arguments="" Description="" ShowCmd="1" HotKey="0" Flags="139"/>
+    <LINK Operation="+" Excluded="false" Path="ProgramMenuFolder\AutoHotkey\AutoHotkey.lnk" TargetPath="ProgramFiles64Folder\AutoHotkey\AutoHotkey.exe" WorkingDir="" IconPath="" IconIndex="0" Arguments="" Description="" ShowCmd="1" HotKey="0" Flags="139"/>
+    <LINK Operation="+" Excluded="false" Path="ProgramMenuFolder\AutoHotkey\Window Spy.lnk" TargetPath="ProgramFiles64Folder\AutoHotkey\WindowSpy.ahk" WorkingDir="" IconPath="" IconIndex="0" Arguments="" Description="" ShowCmd="1" HotKey="0" Flags="139"/>
+    <LINK Operation="+" Excluded="false" Path="ProgramMenuFolder\AutoHotkey\Convert .ahk to .exe.lnk" TargetPath="ProgramFiles64Folder\AutoHotkey\Compiler\Ahk2Exe.exe" WorkingDir="" IconPath="" IconIndex="0" Arguments="" Description="" ShowCmd="1" HotKey="0" Flags="139"/>
+  </FileSystem>
+  <RegistrySystem>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.M2V"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.M2V\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.MPEG" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aiff\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.AIFF" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aif"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aiff"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aif\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.AIFF" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aifc"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ahk\ShellNew">
+      <ENTRY Operation="+" Excluded="false" Name="FileName" Value="Template.ahk" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.aifc\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.AIFF" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asf"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asf\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.ASF" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asx"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ocx\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="ocxfile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.au\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.AU" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.asx\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.ASX" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.m1v\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.MPEG" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ocx"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.au"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.cdxml"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mid\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.MIDI" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mhtml"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.cdxml\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="Microsoft.PowerShellCmdletDefinitionXML.1" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.dds"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.dds\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="ddsfile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wax"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.emf"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wax\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.WAX" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.emf\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="emffile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.odt"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mp2v\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.MPEG" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mk3d\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.MK3D" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript\ShellEx\DropHandler">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="[\{]86C86720-42A0-1069-A2E8-08002B30309D[\}]" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.fon"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.odt\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="odtfile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mp2v"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mk3d"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.fon\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="fonfile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.m1v"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sys"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.midi"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mht"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.sys\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="sysfile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.midi\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.MIDI" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mht\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="mhtmlfile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mhtml\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="mhtmlfile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.mid"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.otf"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.otf\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="otffile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rle"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ps1xml"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\.ahk">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="AutoHotkeyScript" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rle\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="rlefile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ps1xml\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="Microsoft.PowerShellXMLData.1" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.pssc"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.pssc\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="Microsoft.PowerShellSessionConfiguration.1" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.scf"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rmi"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.scf\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="SHCmdFile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.rmi\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.MIDI" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ttc\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="ttcfile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.search-ms"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.ttc"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.search-ms\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="SearchFolder" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.snd"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.snd\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.AU" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmf"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmf\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="wmffile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmx"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wmx\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.ASX" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wvx"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.wvx\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="WMP11.AssocFile.WVX" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.xsl"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Explorer\FileExts\.xsl\OpenWithProgids">
+      <ENTRY Operation="+" Excluded="false" Name="xslfile" Value="" Type="0"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\AutoHotkey">
+      <ENTRY Operation="+" Excluded="false" Name="InstallDir" Value="[ProgramFiles64Folder]AutoHotkey" Type="1"/>
+      <ENTRY Operation="+" Excluded="false" Name="StartMenuFolder" Value="AutoHotkey" Type="1"/>
+      <ENTRY Operation="+" Excluded="false" Name="Version" Value="1.1.33.09" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="AutoHotkey Script" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript\DefaultIcon">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="[ProgramFiles64Folder]AutoHotkey\AutoHotkey.exe,1" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript\Shell">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="Open" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript\ShellEx"/>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript\Shell\Compile">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="Compile Script" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript\Shell\Compile-Gui">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="Compile Script (GUI)..." Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript\Shell\Compile-Gui\Command">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="&quot;[ProgramFiles64Folder]AutoHotkey\Compiler\Ahk2Exe.exe&quot; /gui /in &quot;%l&quot; %*" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript\Shell\Compile\Command">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="&quot;[ProgramFiles64Folder]AutoHotkey\Compiler\Ahk2Exe.exe&quot; /in &quot;%l&quot; %*" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript\Shell\Edit">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="Edit Script" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript\Shell\Edit\Command">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="notepad.exe %1" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript\Shell\Open">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="Run Script" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Classes\AutoHotkeyScript\Shell\Open\Command">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="&quot;[ProgramFiles64Folder]AutoHotkey\AutoHotkey.exe&quot; &quot;%1&quot; %*" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Ahk2Exe.exe">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="[ProgramFiles64Folder]AutoHotkey\Compiler\Ahk2Exe.exe" Type="1"/>
+    </REG>
+    <REG Operation="+" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\AutoHotkey.exe">
+      <ENTRY Operation="+" Excluded="false" Name="" Value="[ProgramFiles64Folder]AutoHotkey\AutoHotkey.exe" Type="1"/>
+    </REG>
+    <REG Operation="*" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\CloudStore\Store\Cache\DefaultAccount\$de${75adef4e-bd99-4a1b-9117-6190936a955d}$$windows.data.unifiedtile.localstartvolatiletilepropertiesmap\Current">
+      <ENTRY Operation="*" Excluded="false" Name="Data" Value="02000000104546e98253d70100000000434201000d120a033457007e007b00310041004300310034004500370037002d0030003200450037002d0034004500350044002d0042003700340034002d003200450042003100410045003500310039003800420037007d005c004d0053005000410049004e0054002e00450058004500c70acc12143ac61ec4b69ad8c28dd3eb01003957007e007b00310041004300310034004500370037002d0030003200450037002d0034004500350044002d0042003700340034002d003200450042003100410045003500310039003800420037007d005c0053004e0049005000500049004e00470054004f004f004c002e00450058004500c70a7390813bc61ec4b69ad8c28dd3eb01005f57007e007b00370043003500410034003000450046002d0041003000460042002d0034004200460043002d0038003700340041002d004300300046003200450030004200390046004100380045007d005c00430041005000480059004f004e005c0041004400560041004e00430045004400200049004e005300540041004c004c00450052002000310038002e0033005c00420049004e005c005800380036005c00520045005000410043004b0041004700450052002e00450058004500c70ac61eca38c51401c61ef0b0ebb8a5f0d4eb010000" Type="3"/>
+    </REG>
+    <REG Operation="*" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Search">
+      <ENTRY Operation="*" Excluded="false" Name="InstalledWin32AppsRevision" Value="[\{]14CB29D0-CD20-4BFA-871E-4DBC131E8A9E[\}]" Type="1"/>
+    </REG>
+    <REG Operation="*" Excluded="false" Path="HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\UFH\SHC">
+      <ENTRY Operation="+" Excluded="false" Name="5" Value="[ProgramMenuFolder]AutoHotkey\AutoHotkey.lnk&#13;&#10;[ProgramFiles64Folder]AutoHotkey\AutoHotkey.exe&#13;&#10;&#13;&#10;" Type="7"/>
+      <ENTRY Operation="+" Excluded="false" Name="6" Value="[ProgramMenuFolder]AutoHotkey\Convert .ahk to .exe.lnk&#13;&#10;[ProgramFiles64Folder]AutoHotkey\Compiler\Ahk2Exe.exe&#13;&#10;&#13;&#10;" Type="7"/>
+    </REG>
+    <REG Operation="*" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\UFH\ARP">
+      <ENTRY Operation="+" Excluded="false" Name="1" Value="Software\Microsoft\Windows\CurrentVersion\Uninstall&#13;&#10;AutoHotkey&#13;&#10;&quot;[ProgramFiles64Folder]AutoHotkey\AutoHotkey.exe&quot; &quot;[ProgramFiles64Folder]AutoHotkey\Installer.ahk&quot;&#13;&#10;" Type="7"/>
+    </REG>
+    <REG Operation="*" Excluded="false" Path="HKEY_LOCAL_MACHINE\SOFTWARE\WOW6432Node\Microsoft\Windows\CurrentVersion\Explorer">
+      <ENTRY Operation="+" Excluded="false" Name="GlobalAssocChangedCounter" Value="1" Type="4"/>
+    </REG>
+  </RegistrySystem>
+  <Metadata>
+    <Product>
+      <Name>AutoHotkey</Name>
+      <Version>1.1.33.9</Version>
+      <Language>1033</Language>
+    </Product>
+    <Publisher>
+      <Id>CN=Your Company</Id>
+      <Name>Your Company</Name>
+    </Publisher>
+    <DigitalSignature Enable="0">
+      <Thumbprint>
+        <![CDATA[]]>
+      </Thumbprint>
+      <Description/>
+      <DescriptionUrl/>
+      <TimestampUrl>http://timestamp.digicert.com</TimestampUrl>
+    </DigitalSignature>
+    <SessionDetails>
+      <ScanConfiguration>Default</ScanConfiguration>
+      <VmProfile/>
+    </SessionDetails>
+  </Metadata>
+  <TaskSchedulerSystem/>
+  <SystemUsers/>
+  <Fixups/>
+</RepackagerData>
